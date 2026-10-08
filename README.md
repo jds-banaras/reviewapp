@@ -6,7 +6,7 @@ A customer scans the QR stand, picks a star rating, what they shopped for and a 
 
 | Path | What it does |
 |---|---|
-| `config/business.json` | **Edit this.** Shop description, strengths, categories, languages, review link, social links |
+| `config/business.js` | **Edit this.** Shop description, strengths, categories, languages, review link, social links |
 | `public/` | The page (`index.html`, `styles.css`, `app.js`), the logo and the printable card (`print.html`) |
 | `api/review.js` | Serverless route that drafts the review with Claude, rate-limited per IP |
 | `api/config.js` | Sends the public shop details to the page |
@@ -43,7 +43,7 @@ npm run qr -- https://YOUR-URL.vercel.app
 
 ## Customise
 
-- **Social icons:** fill `links` in `config/business.json` (`instagram`, `facebook`, `whatsapp` as a number with country code, `phone`, `website`, `maps`). Empty values are hidden.
+- **Social icons:** fill `links` in `config/business.js` (`instagram`, `facebook`, `whatsapp` as a number with country code, `phone`, `website`, `maps`). Empty values are hidden.
 - **What the AI says:** edit `description` and `highlights`. Only list things that are true; the prompt tells the model not to invent prices, names or offers.
 - **Another shop:** copy the folder, swap `logo.png` and `business.json`, deploy as a new Vercel project.
 

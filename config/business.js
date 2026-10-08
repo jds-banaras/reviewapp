@@ -1,4 +1,5 @@
-{
+// Shop details. Edit the values below, then commit and push to update the live site.
+export default {
   "name": "JDS Banaras",
   "tagline": "Handwoven Banarasi heritage - Since 1913",
   "city": "Varanasi",
@@ -22,4 +23,4 @@
     "website": "https://www.jdsvaranasi.in/",
     "maps": "https://www.google.com/maps?cid=3074641527464251194&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=en-IN&source=embed"
   }
-}
+};

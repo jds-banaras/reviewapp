@@ -39,7 +39,7 @@ npm run qr -- https://YOUR-URL.vercel.app
 
 4. Open `https://YOUR-URL.vercel.app/print.html` and print at 100% scale on A6. Put it in an acrylic stand.
 
-> The included `qr.svg` points to `https://jds-banaras-review.vercel.app`. **Regenerate it if your URL is different**, or the printed QR won't work.
+> The included `qr.svg` points to `https://reviewapp-eta-ecru.vercel.app`. **Regenerate it if your URL is different**, or the printed QR won't work.
 
 ## Customise
 

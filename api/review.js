@@ -1,6 +1,8 @@
-import business from "../config/business.json" with { type: "json" };
+import { createRequire } from "node:module";
 import { cleanInput, generateReview } from "../lib/generate.js";
 import { allow } from "../lib/rate-limit.js";
+
+const business = createRequire(import.meta.url)("../config/business.json");
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {

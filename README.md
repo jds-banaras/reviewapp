@@ -12,7 +12,7 @@ A customer scans the QR stand, picks a star rating, what they shopped for and a 
 | `api/config.js` | Sends the public shop details to the page |
 | `lib/generate.js` | Prompt, Claude call and offline template fallback |
 | `scripts/make-qr.js` | Generates `public/qr.svg` / `qr.png` for your live URL |
-| `server.js` | Local dev server (same handlers as on Vercel) |
+| `scripts/dev-server.js` | Local dev server (same handlers as on Vercel) |
 
 ## Run locally
 

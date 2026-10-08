@@ -3,11 +3,11 @@ import http from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import reviewHandler from "./api/review.js";
-import configHandler from "./api/config.js";
+import reviewHandler from "../api/review.js";
+import configHandler from "../api/config.js";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const PUBLIC = path.join(here, "public");
+const PUBLIC = path.join(here, "..", "public");
 const PORT = process.env.PORT || 3000;
 const routes = { "/api/review": reviewHandler, "/api/config": configHandler };
 const TYPES = {

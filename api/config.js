@@ -1,4 +1,6 @@
-import business from "../config/business.json" with { type: "json" };
+import { createRequire } from "node:module";
+
+const business = createRequire(import.meta.url)("../config/business.json");
 
 // Public shop details for the page. Prompt-only fields stay server-side.
 export default function handler(req, res) {

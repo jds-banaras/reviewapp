@@ -1,0 +1,6 @@
+{
+  "outputDirectory": "public",
+  "functions": {
+    "api/review.js": { "maxDuration": 30 }
+  }
+}
